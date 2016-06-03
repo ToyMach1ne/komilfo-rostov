@@ -12,7 +12,7 @@
   /*----*****---- << Newsletter >> ----*****----*/
 
   #newsletter {
-    background: url(../img/newsletter-bg-medium.png) no-repeat;
+    background: url(/images/newsletter-bg-medium.png) no-repeat;
   }
 
   /*----*****---- << Headings >> ----*****----*/
@@ -58,12 +58,12 @@
 
 @media only screen and (min-width: 768px) and (max-width: 959px) {
   /*----*****---- << Header >> ----*****----*/
-  /*#top-menu { background:url(../img/menu-bg-tablet.jpg) repeat-x; }*/
+  /*#top-menu { background:url(/images/menu-bg-tablet.jpg) repeat-x; }*/
 
   /*----*****---- << Newsletter >> ----*****----*/
 
   #newsletter {
-    background: url(../img/newsletter-bg-tablet.png) no-repeat;
+    background: url(/images/newsletter-bg-tablet.png) no-repeat;
   }
 
   /*----*****---- << Headings >> ----*****----*/
@@ -111,7 +111,7 @@
   /*----*****---- << Header >> ----*****----*/
 
   #header {
-    background: url(../img/headerM.png) center top repeat-x;
+    background: url(/images/headerM.png) center top repeat-x;
     height: 250px;
   }
 
@@ -133,11 +133,11 @@
   /*----*****---- << Newsletter >> ----*****----*/
 
   #newsletter {
-    background: url(../img/newsletter-bg-mobile.png) no-repeat;
+    background: url(/images/newsletter-bg-mobile.png) no-repeat;
   }
 
   #top-menu .responsive-nav {
-    background-image: url(../img/responsive-nav-bg.png);
+    background-image: url(/images/responsive-nav-bg.png);
     background-color: #fdfaeb;
     border-bottom-color: #2f271e;
     color: #362922;
@@ -196,7 +196,7 @@
   /*----*****---- << Header >> ----*****----*/
 
   #header {
-    background: url(../img/headerMM.png) center top repeat-x;
+    background: url(/images/headerMM.png) center top repeat-x;
     height: 200px;
   }
 
@@ -211,17 +211,17 @@
   /*----*****---- << Newsletter >> ----*****----*/
 
   #newsletter {
-    background: url(../img/newsletter-bg-mobile-port.png) no-repeat;
+    background: url(/images/newsletter-bg-mobile-port.png) no-repeat;
   }
 
   /*----*****---- << 404 >> ----*****----*/
 
   .back-btn {
-    background: url(../img/back-btn-mobile.png) no-repeat;
+    background: url(/images/back-btn-mobile.png) no-repeat;
   }
 
   #top-menu .responsive-nav {
-    background-image: url(../img/responsive-nav-bg.png);
+    background-image: url(/images/responsive-nav-bg.png);
     background-color: #fdfaeb;
     border-bottom-color: #2f271e;
     color: #362922;
@@ -281,7 +281,7 @@
   /*----*****---- << Newsletter >> ----*****----*/
 
   #newsletter {
-    background: url(../img/newsletter-bg-android.png) no-repeat;
+    background: url(/images/newsletter-bg-android.png) no-repeat;
   }
 
   .post-thumb img {

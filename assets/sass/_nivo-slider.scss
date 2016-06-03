@@ -38,7 +38,7 @@ Supports Thumbs: true
     z-index: 9999;
 
     a {
-      background: url(../img/slider-nav.png) left -86px no-repeat;
+      background: url(/images/slider-nav.png) left -86px no-repeat;
       width: 29px;
       height: 30px;
       display: inline-block;
@@ -57,7 +57,7 @@ Supports Thumbs: true
     height: 42px;
     display: block;
     top: 45%;
-    background: url(../img/slider-nav.png) no-repeat;
+    background: url(/images/slider-nav.png) no-repeat;
     text-indent: -9999px;
     border: 0;
     opacity: 0;
@@ -79,7 +79,7 @@ Supports Thumbs: true
         left: 0;
         bottom: 0;
         right: 0;
-        background: url(../img/slider-nav.png) left -42px no-repeat;
+        background: url(/images/slider-nav.png) left -42px no-repeat;
         opacity: 0;
         -webkit-transition: opacity 0.5s;
         -moz-transition: opacity 0.5s;
@@ -108,7 +108,7 @@ Supports Thumbs: true
         left: 0;
         bottom: 0;
         right: 0;
-        background: url(../img/slider-nav.png) left top no-repeat;
+        background: url(/images/slider-nav.png) left top no-repeat;
         opacity: 0;
         -webkit-transition: opacity 0.5s;
         -moz-transition: opacity 0.5s;
@@ -138,7 +138,7 @@ Supports Thumbs: true
     }
 
     a.banner-btn {
-      background: url(../img/slider-readmore.png) right no-repeat;
+      background: url(/images/slider-readmore.png) right no-repeat;
       height: 30px;
       float: left;
       color: #fffae4;
@@ -277,7 +277,7 @@ Supports Thumbs: true
       bottom: 5px;
 
       a {
-        background: url(../img/slider-nav-mobile.png) left -52px no-repeat;
+        background: url(/images/slider-nav-mobile.png) left -52px no-repeat;
         width: 17px;
         height: 18px;
 
@@ -290,13 +290,13 @@ Supports Thumbs: true
     .nivo-directionNav a {
       width: 26px;
       height: 26px;
-      background: url(../img/slider-nav-mobile.png) no-repeat;
+      background: url(/images/slider-nav-mobile.png) no-repeat;
     }
 
     a {
       &.nivo-nextNav {
         &:after {
-          background: url(../img/slider-nav-mobile.png) left -42px no-repeat;
+          background: url(/images/slider-nav-mobile.png) left -42px no-repeat;
         }
 
         &:hover {
@@ -314,7 +314,7 @@ Supports Thumbs: true
 
       &.nivo-prevNav {
         &:after {
-          background: url(../img/slider-nav-mobile.png) left top no-repeat;
+          background: url(/images/slider-nav-mobile.png) left top no-repeat;
         }
 
         &:hover {
@@ -343,7 +343,7 @@ Supports Thumbs: true
       bottom: 5px;
 
       a {
-        background: url(../img/slider-nav-mobile.png) left -52px no-repeat;
+        background: url(/images/slider-nav-mobile.png) left -52px no-repeat;
         width: 17px;
         height: 18px;
 
@@ -356,13 +356,13 @@ Supports Thumbs: true
     .nivo-directionNav a {
       width: 26px;
       height: 26px;
-      background: url(../img/slider-nav-mobile.png) no-repeat;
+      background: url(/images/slider-nav-mobile.png) no-repeat;
     }
 
     a {
       &.nivo-nextNav {
         &:after {
-          background: url(../img/slider-nav-mobile.png) left -42px no-repeat;
+          background: url(/images/slider-nav-mobile.png) left -42px no-repeat;
         }
 
         &:hover {
@@ -380,7 +380,7 @@ Supports Thumbs: true
 
       &.nivo-prevNav {
         &:after {
-          background: url(../img/slider-nav-mobile.png) left top no-repeat;
+          background: url(/images/slider-nav-mobile.png) left top no-repeat;
         }
 
         &:hover {

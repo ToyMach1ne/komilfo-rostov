@@ -8,108 +8,394 @@ Author URI: http://dev7studios.com
 Supports Thumbs: true
 */
 
-.theme-default .nivoSlider { position:relative; margin-bottom:10px; -webkit-box-shadow: 0px 1px 5px 0px #4a4a4a; -moz-box-shadow: 0px 1px 5px 0px #4a4a4a; box-shadow: 0px 1px 5px 0px #4a4a4a; }
-.theme-default .nivoSlider img { position:absolute; top:0px; left:0px; display:none; }
-.theme-default .nivoSlider a { border:0; display:block; }
+.theme-default {
+  .nivoSlider {
+    position: relative;
+    margin-bottom: 10px;
+    -webkit-box-shadow: 0px 1px 5px 0px #4a4a4a;
+    -moz-box-shadow: 0px 1px 5px 0px #4a4a4a;
+    box-shadow: 0px 1px 5px 0px #4a4a4a;
 
-.theme-default .nivo-controlNav { bottom:-45px; position:absolute; width:100%; margin:0 auto; text-align:center; z-index:9999; }
-.theme-default .nivo-controlNav a { background:url(/images/slider-nav.png) left -86px no-repeat; width:29px; height:30px; display:inline-block; margin:0px 2px; text-indent:-9999px; }
-.theme-default .nivo-controlNav a.active, .theme-default .nivo-controlNav a:hover { background-position:-29px -86px; }
+    img {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      display: none;
+    }
+
+    a {
+      border: 0;
+      display: block;
+    }
+  }
+
+  .nivo-controlNav {
+    bottom: -45px;
+    position: absolute;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    z-index: 9999;
+
+    a {
+      background: url(../img/slider-nav.png) left -86px no-repeat;
+      width: 29px;
+      height: 30px;
+      display: inline-block;
+      margin: 0px 2px;
+      text-indent: -9999px;
+
+      &.active, &:hover {
+        background-position: -29px -86px;
+      }
+    }
+  }
+
+  .nivo-directionNav a {
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    display: block;
+    top: 45%;
+    background: url(../img/slider-nav.png) no-repeat;
+    text-indent: -9999px;
+    border: 0;
+    opacity: 0;
+    -webkit-transition: opacity 0.5s;
+    -moz-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+  }
+
+  &:hover .nivo-directionNav a {
+    opacity: 1;
+  }
+
+  a {
+    &.nivo-nextNav {
+      &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: url(../img/slider-nav.png) left -42px no-repeat;
+        opacity: 0;
+        -webkit-transition: opacity 0.5s;
+        -moz-transition: opacity 0.5s;
+        -o-transition: opacity 0.5s;
+      }
+
+      &:hover {
+        &:after {
+          opacity: 1;
+          background-position: -42px -42px;
+          background-position: -42px -42px;
+        }
+
+        background-position: -42px -42px;
+      }
+
+      background-position: left -42px;
+      right: 30px;
+    }
+
+    &.nivo-prevNav {
+      &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: url(../img/slider-nav.png) left top no-repeat;
+        opacity: 0;
+        -webkit-transition: opacity 0.5s;
+        -moz-transition: opacity 0.5s;
+        -o-transition: opacity 0.5s;
+      }
+
+      &:hover {
+        &:after {
+          opacity: 1;
+          background-position: -42px top;
+          background-position: -42px top;
+        }
+
+        background-position: -42px top;
+      }
+
+      left: 30px;
+      background-position: left top;
+    }
+  }
+
+  .nivo-caption {
+    h2 {
+      font-size: 48px;
+      line-height: 36px;
+      letter-spacing: -0.20px;
+    }
+
+    a.banner-btn {
+      background: url(../img/slider-readmore.png) right no-repeat;
+      height: 30px;
+      float: left;
+      color: #fffae4;
+      line-height: 30px;
+      padding: 0px 12px 0px 0px;
+
+      span {
+        background: #361f0f;
+        display: block;
+        height: 30px;
+        padding: 0px 22px;
+      }
+    }
+  }
+}
 
 /* Replace */
-.theme-default .nivo-directionNav a { position:absolute; width:42px; height:42px; display:block; top:45%; background:url(/images/slider-nav.png) no-repeat; text-indent:-9999px; border:0; opacity: 0; -webkit-transition: opacity 0.5s; -moz-transition:opacity 0.5s; -o-transition:opacity 0.5s; }
-.theme-default:hover .nivo-directionNav a { opacity:1; }
-
-.theme-default a.nivo-nextNav:after { content: ""; position: absolute; top:0; left:0; bottom:0; right:0; background: url(/images/slider-nav.png) left -42px no-repeat; opacity:0; -webkit-transition: opacity 0.5s; -moz-transition:opacity 0.5s; -o-transition:opacity 0.5s; } 	
-.theme-default a.nivo-nextNav:hover:after { opacity:1; background-position:-42px -42px; }
-.theme-default a.nivo-nextNav { background-position:left -42px; right:30px; }
-.theme-default a.nivo-nextNav:hover, .theme-default a.nivo-nextNav:hover:after { background-position:-42px -42px; }
-
-.theme-default a.nivo-prevNav:after { content: ""; position: absolute; top:0; left:0; bottom:0; right:0; background: url(/images/slider-nav.png) left top no-repeat; opacity:0; -webkit-transition: opacity 0.5s; -moz-transition:opacity 0.5s; -o-transition:opacity 0.5s; } 	
-.theme-default a.nivo-prevNav:hover:after { opacity:1; background-position:-42px top; }
-.theme-default a.nivo-prevNav { left:30px; background-position:left top; }
-.theme-default a.nivo-prevNav:hover, .theme-default a.nivo-prevNav:hover:after { background-position:-42px top; }
-
-.theme-default .nivo-caption h2 { font-size:48px; line-height:36px; letter-spacing:-0.20px; }
-.theme-default .nivo-caption a.banner-btn { background:url(/images/slider-readmore.png) right no-repeat; height:30px; float:left; color:#fffae4; line-height:30px; padding:0px 12px 0px 0px; }
-.theme-default .nivo-caption a.banner-btn span { background:#361f0f; display:block; height:30px; padding:0px 22px; }
 
 /* The Nivo Slider styles */
-.nivoSlider { position:relative; width:100%; height:auto; overflow: hidden; }
-.nivoSlider img { position:absolute; top:0px; left:0px; max-width: none; }
-.nivo-main-image { display: block !important; position: relative !important;  width: 100% !important; }
+
+.nivoSlider {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+
+  img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    max-width: none;
+  }
+}
+
+.nivo-main-image {
+  display: block !important;
+  position: relative !important;
+  width: 100% !important;
+}
 
 /* If an image is wrapped in a link */
-.nivoSlider a.nivo-imageLink { position:absolute; top:0px; left:0px; width:100%; height:100%; border:0; padding:0; margin:0; z-index:6; display:none; }
 
-/* The slices and boxes in the Slider */ 
-.nivo-slice { display:block; position:absolute; z-index:5; height:100%; top:0; }
-.nivo-box { display:block; position:absolute; z-index:5; overflow:hidden; }
-.nivo-box img { display:block; } 
+.nivoSlider a.nivo-imageLink {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  z-index: 6;
+  display: none;
+}
+
+/* The slices and boxes in the Slider */
+
+.nivo-slice {
+  display: block;
+  position: absolute;
+  z-index: 5;
+  height: 100%;
+  top: 0;
+}
+
+.nivo-box {
+  display: block;
+  position: absolute;
+  z-index: 5;
+  overflow: hidden;
+
+  img {
+    display: block;
+  }
+}
 
 /* Caption styles */
-.nivo-caption { position:absolute; z-index:8; opacity:1; overflow: hidden; display: none; -moz-opacity:1; filter:alpha(opacity=1); }
-.nivo-html-caption { display:none; }
+
+.nivo-caption {
+  position: absolute;
+  z-index: 8;
+  opacity: 1;
+  overflow: hidden;
+  display: none;
+  -moz-opacity: 1;
+  filter: alpha(opacity = 1);
+}
+
+.nivo-html-caption {
+  display: none;
+}
 
 /* Direction nav styles (e.g. Next & Prev) */
-.nivo-directionNav a { position:absolute; top:45%; z-index:9; cursor:pointer; }
-.nivo-prevNav { left:0px; }
-.nivo-nextNav { right:0px; }
+
+.nivo-directionNav a {
+  position: absolute;
+  top: 45%;
+  z-index: 9;
+  cursor: pointer;
+}
+
+.nivo-prevNav {
+  left: 0px;
+}
+
+.nivo-nextNav {
+  right: 0px;
+}
 
 /* Control nav styles (e.g. 1,2,3...) */
-.nivo-controlNav a { cursor:pointer; }
 
-
-
+.nivo-controlNav a {
+  cursor: pointer;
+}
 
 /*----*****---- << Responsive >> ----*****----*/
 
-	/*----*****---- << Mobile (Landscape) >> ----*****----*/	
-	
-	/* Note: Design for a width of 480px */
-	
-	@media only screen and (min-width: 480px) and (max-width: 767px) {		
-	
-		.nivo-caption p { display:none; }		
-		.nivo-caption h2 { font-size:30px !important; line-height:24px !important; }
-		
-		.theme-default .nivo-controlNav { bottom:5px; }
-		.theme-default .nivo-controlNav a { background:url(/images/slider-nav-mobile.png) left -52px no-repeat; width:17px; height:18px; }
-		.theme-default .nivo-controlNav a.active, .theme-default .nivo-controlNav a:hover { background-position:-17px -52px; }
-		
-		.theme-default .nivo-directionNav a { width:26px; height:26px; background:url(/images/slider-nav-mobile.png) no-repeat;}
-		
-		.theme-default a.nivo-nextNav:after { background: url(/images/slider-nav-mobile.png) left -42px no-repeat; } 	
-		.theme-default a.nivo-nextNav:hover:after { background-position:-26px -26px; }
-		.theme-default a.nivo-nextNav { background-position:left -26px; right:10px; }
-		.theme-default a.nivo-nextNav:hover, .theme-default a.nivo-nextNav:hover:after { background-position:-26px -26px; }
-		
-		.theme-default a.nivo-prevNav:after { background: url(/images/slider-nav-mobile.png) left top no-repeat; } 	
-		.theme-default a.nivo-prevNav:hover:after { opacity:1; background-position:-26px top; }
-		.theme-default a.nivo-prevNav { left:10px; background-position:left top; }
-		.theme-default a.nivo-prevNav:hover, .theme-default a.nivo-prevNav:hover:after { background-position:-26px top; }
-		
-	}
-	
-	/*----*****---- << Mobile >> ----*****----*/	
+/*----*****---- << Mobile (Landscape) >> ----*****----*/
 
-	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-	@media only screen and (max-width: 479px) {
-	
-		.theme-default .nivo-controlNav { bottom:5px; }
-		.theme-default .nivo-controlNav a { background:url(/images/slider-nav-mobile.png) left -52px no-repeat; width:17px; height:18px; }
-		.theme-default .nivo-controlNav a.active, .theme-default .nivo-controlNav a:hover { background-position:-17px -52px; }
-		
-		.theme-default .nivo-directionNav a { width:26px; height:26px; background:url(/images/slider-nav-mobile.png) no-repeat;}
-		
-		.theme-default a.nivo-nextNav:after { background: url(/images/slider-nav-mobile.png) left -42px no-repeat; } 	
-		.theme-default a.nivo-nextNav:hover:after { background-position:-26px -26px; }
-		.theme-default a.nivo-nextNav { background-position:left -26px; right:10px; }
-		.theme-default a.nivo-nextNav:hover, .theme-default a.nivo-nextNav:hover:after { background-position:-26px -26px; }
-		
-		.theme-default a.nivo-prevNav:after { background: url(/images/slider-nav-mobile.png) left top no-repeat; } 	
-		.theme-default a.nivo-prevNav:hover:after { opacity:1; background-position:-26px top; }
-		.theme-default a.nivo-prevNav { left:10px; background-position:left top; }
-		.theme-default a.nivo-prevNav:hover, .theme-default a.nivo-prevNav:hover:after { background-position:-26px top; }
-		
-	}
+/* Note: Design for a width of 480px */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .nivo-caption {
+    p {
+      display: none;
+    }
+
+    h2 {
+      font-size: 30px !important;
+      line-height: 24px !important;
+    }
+  }
+
+  .theme-default {
+    .nivo-controlNav {
+      bottom: 5px;
+
+      a {
+        background: url(../img/slider-nav-mobile.png) left -52px no-repeat;
+        width: 17px;
+        height: 18px;
+
+        &.active, &:hover {
+          background-position: -17px -52px;
+        }
+      }
+    }
+
+    .nivo-directionNav a {
+      width: 26px;
+      height: 26px;
+      background: url(../img/slider-nav-mobile.png) no-repeat;
+    }
+
+    a {
+      &.nivo-nextNav {
+        &:after {
+          background: url(../img/slider-nav-mobile.png) left -42px no-repeat;
+        }
+
+        &:hover {
+          &:after {
+            background-position: -26px -26px;
+            background-position: -26px -26px;
+          }
+
+          background-position: -26px -26px;
+        }
+
+        background-position: left -26px;
+        right: 10px;
+      }
+
+      &.nivo-prevNav {
+        &:after {
+          background: url(../img/slider-nav-mobile.png) left top no-repeat;
+        }
+
+        &:hover {
+          &:after {
+            opacity: 1;
+            background-position: -26px top;
+            background-position: -26px top;
+          }
+
+          background-position: -26px top;
+        }
+
+        left: 10px;
+        background-position: left top;
+      }
+    }
+  }
+}
+
+/*----*****---- << Mobile >> ----*****----*/
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+  .theme-default {
+    .nivo-controlNav {
+      bottom: 5px;
+
+      a {
+        background: url(../img/slider-nav-mobile.png) left -52px no-repeat;
+        width: 17px;
+        height: 18px;
+
+        &.active, &:hover {
+          background-position: -17px -52px;
+        }
+      }
+    }
+
+    .nivo-directionNav a {
+      width: 26px;
+      height: 26px;
+      background: url(../img/slider-nav-mobile.png) no-repeat;
+    }
+
+    a {
+      &.nivo-nextNav {
+        &:after {
+          background: url(../img/slider-nav-mobile.png) left -42px no-repeat;
+        }
+
+        &:hover {
+          &:after {
+            background-position: -26px -26px;
+            background-position: -26px -26px;
+          }
+
+          background-position: -26px -26px;
+        }
+
+        background-position: left -26px;
+        right: 10px;
+      }
+
+      &.nivo-prevNav {
+        &:after {
+          background: url(../img/slider-nav-mobile.png) left top no-repeat;
+        }
+
+        &:hover {
+          &:after {
+            opacity: 1;
+            background-position: -26px top;
+            background-position: -26px top;
+          }
+
+          background-position: -26px top;
+        }
+
+        left: 10px;
+        background-position: left top;
+      }
+    }
+  }
+}
